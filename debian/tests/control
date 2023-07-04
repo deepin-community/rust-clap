@@ -1,0 +1,94 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --all-features
+Features: test-name=rust-clap:@
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features cargo
+Features: test-name=librust-clap-dev:cargo
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features color
+Features: test-name=librust-clap-dev:color
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features debug
+Features: test-name=librust-clap-dev:debug
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets
+Features: test-name=librust-clap-dev:default
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features deprecated
+Features: test-name=librust-clap-dev:deprecated
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features derive
+Features: test-name=librust-clap-dev:derive
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features env
+Features: test-name=librust-clap-dev:env
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features error-context
+Features: test-name=librust-clap-dev:error-context
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features help
+Features: test-name=librust-clap-dev:help
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features std
+Features: test-name=librust-clap-dev:std
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features string
+Features: test-name=librust-clap-dev:string
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features suggestions
+Features: test-name=librust-clap-dev:suggestions
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features unicode
+Features: test-name=librust-clap-dev:unicode
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features unstable-grouped
+Features: test-name=librust-clap-dev:unstable-grouped
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features unstable-replace
+Features: test-name=librust-clap-dev:unstable-replace
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features usage
+Features: test-name=librust-clap-dev:usage
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features --features wrap_help
+Features: test-name=librust-clap-dev:wrap_help
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test clap 4.0.32 --all-targets --no-default-features
+Features: test-name=librust-clap-dev:
+Depends: dh-cargo (>= 18), librust-humantime-2+default-dev, librust-rustversion-1+default-dev, librust-shlex-1+default-dev (>= 1.1.0-~~), librust-static-assertions-1+default-dev (>= 1.1.0-~~), librust-trybuild-1+default-dev (>= 1.0.72-~~), @
+Restrictions: allow-stderr, skip-not-installable, flaky
