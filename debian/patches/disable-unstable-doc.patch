@@ -1,0 +1,25 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -39,3 +39,2 @@
+ [package.metadata.docs.rs]
+-features = ["unstable-doc"]
+ rustdoc-args = [
+@@ -49,5 +48,2 @@
+ 
+-[package.metadata.playground]
+-features = ["unstable-doc"]
+-
+ [package.metadata.release]
+@@ -439,12 +435,2 @@
+ ]
+-unstable-doc = [
+-    "derive",
+-    "cargo",
+-    "wrap_help",
+-    "env",
+-    "unicode",
+-    "string",
+-    "unstable-replace",
+-    "unstable-grouped",
+-]
+ unstable-grouped = []
